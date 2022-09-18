@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500&family=Oswald:wght@400;500;600&display=swap');
+
+
+body {
+  margin: 0;
+}
+
+/*----------- Hover transition --------*/
+
+.btn-hov {
+  transition: all 250ms;
+  transition-timing-property: ease-in;
+}
+
+.btn-hov:hover {
+  transform: scale(1.1);
+}
+
+/*---------- Cloth Card anims ---------*/
+
+.cloth-card-out {
+  opacity: 0;
+  transform: translateX(-4rem) translateY(-4rem);
+}
+
+@keyframes cloth-card-anim-in {
+  from {
+    opacity: 0;
+    transform: translateX(-4rem) translateY(-4rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+  }
+}
+
+/*-------------- Z-Movement ----------------- */
+.preserveZ {
+  transform-style: preserve-3d;
+}
+
+.move-header {
+  transform: translateZ(2rem);
+}
+
+.move-img {
+  transform: translateZ(1.5rem);
+}
+
+.move-price {
+  transform: translateZ(0.5rem);
+}
+
+.move-btn {
+  transform: translateZ(1.5rem);
+}
+
+.move-dec {
+  transform: translateZ(1rem);
+  
+}
+
+/* ------------- Fade-out Anims -----------------*/
+
+.fade-init {
+  opacity: 1;
+}
+
+.fade-out {
+  transition: all 250ms;
+  transition-timing-property: ease-in;
+  opacity: 0;
+}
+
+/* ------------- Cloth Cards --------------- */
+
+.more-btn {
+  transition: all 250ms;
+  transition-timing-property: ease-in;
+}
+
+.more-btn:hover {
+  transform: scale(1.1);
+  background-color: #272727;
+  color: white;
+}
+
+/* ------------- Header Filters --------------- */
+
+.underline {
+  position: absolute;
+  background-color: white;
+  height: 0.15rem;
+  right: -0.2rem;
+  top: 2.2rem;
+}
+
+.selected {
+  transition: 0.5s ease;
+  transform: scaleX(100%);
+}
+
+.unselected {
+  transition: 0.5s ease;
+  transform: scaleX(0%);
+}
+
+#underline0 {
+  width: 1.1em;
+}
+
+#underline1 {
+  width: 2.95em;
+}
+
+#underline2 {
+  width: 1.8em;
+}
+
+#underline3 {
+  width: 1.8em;
+}
+
+/* --------------- Custom ScrollBar ------------- */
+
+.review-panel::-webkit-scrollbar-thumb {
+  background: #272727;
+}
+
+.review-panel::-webkit-scrollbar-thumb:hover {
+  background: #202020;
+}
+
+.review-panel::-webkit-scrollbar-track {
+  background: white;
+}
+
+.review-panel::-webkit-scrollbar {
+  width: 1.2rem;
+}
+
+@supports (scrollbar-color: red blue) {
+  .review-panel {
+    scrollbar-color: #272727 white;
+    scrollbar-width: thin;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}

@@ -15,5 +15,5 @@ https://keen-stonebraker-bb1355.netlify.app
 
 # Technologies Used
 
--React
--Tailwind CSS
+1. React
+2. Tailwind CSS

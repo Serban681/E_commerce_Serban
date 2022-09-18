@@ -8,10 +8,10 @@ https://keen-stonebraker-bb1355.netlify.app
 
 ## Features
 
-*. Filtered Clothing Menu based on gender criteria
-*. A cart that calculates the total price of the products
-*. A wishlist of the items
-*. User reviews for each product
+1. Filtered Clothing Menu based on gender criteria
+2. A cart that calculates the total price of the products
+3. A wishlist of the items
+4. User reviews for each product
 
 # Technologies Used
 
